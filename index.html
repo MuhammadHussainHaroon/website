@@ -15,24 +15,28 @@
             <nav class="place-content-evenly">
                 <ul class="flex  my-1.5">
                     <li class="my-1.5 mr-6"><img src="./assets/logo 2.svg" alt="" width="120px"></li>
-                    <li class="my-2"><img src="./assets/logo 1.svg" alt=""></li>
-                    <li class="ml-2">deliver <br>to dubai</li>
+                    <li class="my-2 hidden xl:block"><img src="./assets/logo 1.svg" alt=""></li>
+                    <li class="ml-2 hidden xl:block">deliver <br>to dubai</li>
                 </ul>
             </nav>
             <input type="text" class="w-3/5 h-10 my-1.5 rounded outline-none" placeholder=" what are you looking for?">
-            <nav>
+            <nav class="flex">
                 <ul class="flex gap-5 my-2.5">
-                    <li> <b>sign in</b></li>
-                    <li><img src="./assets/logo 3.svg" alt=""></li>
-                    <li> <b>cart</b></li>
-                    <li><img src="./assets/logo 4.svg" alt=""></li>
+                    <li class="hidden xl:block"> <b>sign in</b></li>
+                    <li class="hidden xl::block"><img src="./assets/logo 3.svg" alt=""></li>
+                    <li class="hidden xl:block"> <b>cart</b></li>
+                    <li class="hidden xl:block"><img src="./assets/logo 4.svg" alt=""></li>
 
                 </ul>
+                <div class="xl:hidden">
+                    <a class="text-4xl " href="#">&#8801;</a>
+                </div>
             </nav>
+
         </div>
         <nav>
-            <ul class="flex place-content-evenly ml-6">
-                <li class=""><b>ALL CATEGORIES</b></li>
+            <ul class="flex place-content-evenly ml-6 flex-col xl:flex-row">
+                <li><b>ALL CATEGORIES</b></li>
                 <li><b>ELECTRONICS</b></li>
                 <li><b>MEN</b></li>
                 <li><b>WOMEN</b></li>
@@ -46,13 +50,14 @@
                 <li class="b">NOON <i>FREE DELIVERY</i></li>
             </ul>
         </nav>
-        <div class="flex">
+        <div class="flex flex-col xl:flex-row">
             <div>
                 <img src="./assets/image 1.png" alt="">
             </div>
-            <div><img src="./assets/image 2.png" alt=""></div>
-            <div><img src="./assets/image 3.png" alt=""></div>
+            <div class="flex h-52"><img src="./assets/image 2.png" alt="">
+            <img src="./assets/image 3.png" alt=""></div>
         </div>
+        <div class="xl:flex">
         <div class="flex c">
             <div><img src="./assets/image 4.png" alt=""></div>
             <div><img src="./assets/image 5.png" alt=""></div>
@@ -60,6 +65,8 @@
             <div><img src="./assets/image 7.png" alt=""></div>
             <div><img src="./assets/image 8.png" alt=""></div>
             <div><img src="./assets/image 9.png" alt=""></div>
+        </div>
+        <div class="flex c">
             <div><img src="./assets/image 10.png" alt=""></div>
             <div><img src="./assets/image 11.png" alt=""></div>
             <div><img src="./assets/image 12.png" alt=""></div>
@@ -67,7 +74,9 @@
             <div><img src="./assets/image 14.png" alt=""></div>
             <div><img src="./assets/image 15.png" alt=""></div>
         </div>
-        <div class="flex">
+        </div>
+        <div class="xl:flex">
+        <div class="xl:flex">
             <div class="bg-white mt-6 ml-5">
                 <h2 class="ml-4 mt-4 text-2xl"><b>MORE REASON TO SHOP</b></h2>
                 <div class="flex mt-3 ml-4">
@@ -85,7 +94,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#fcf49c] mt-6 ml-5">
+            
+            <div class="bg-[#fcf49c] mt-6 ml-5 w-96">
                 <h2 class="text-2xl ml-3"><b>MEGA DEALS</b></h2>
                 <div class="flex gap-5 ml-3 mr-3 mt-2">
                     <div class="bg-white w-44"><img src="./assets/image 20.jpg" alt="" width="100px" class="ml-6 mt-4">
@@ -114,10 +124,12 @@
                 </div>
             </div>
         </div>
+    </div>
         <div>
-            <h2 class="text-2xl ml-3 mt-3"><b>RECOMMENDED FOR YOU</b></h2>
+            <h2 class="text-2xl ml-3 mt-3 "><b>RECOMMENDED FOR YOU</b></h2>
         </div>
-        <div class="flex gap-4 bg-slate-200 ">
+        <div class="flex-col xl:flex-row flex gap-4 bg-slate-200">
+        <div class="gap-4 flex">
             <div class="bg-white ml-3 mt-3  mb-3"><img src="./assets/image 26.avif" alt="">
                 <p class="ml-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Deserunt, sit?</p>
                 <p class="ml-3 mt-2">AED=44000</p> <img src="./assets/logo express.svg" alt="" class="ml-5 mt-8">
@@ -130,6 +142,8 @@
                 <p class="ml-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Deserunt, sit?</p>
                 <p class="ml-3 mt-2">AED=44000</p> <img src="./assets/logo express.svg" alt="" class="ml-5 mt-8">
             </div>
+        </div>
+        <div class="flex bg-slate-200 gap-4">
             <div class="bg-white mt-3  mb-3"><img src="./assets/image 29.avif" alt="">
                 <p class="ml-3">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Deserunt, sit?</p>
                 <p class="ml-3 mt-2  ">AED=44000</p> <img src="./assets/logo express.svg" alt="" class="ml-5 mt-8">
@@ -143,19 +157,24 @@
                 <p class="ml-3 mt-2">AED=44000</p> <img src="./assets/logo express.svg" alt="" class="ml-5 mt-8">
             </div>
         </div>
+        </div>
         <div>
             <h2 class="ml-3 text-2xl mt-3 my-2"><b>BE WELL PREPARED FOR SCHOOL</b></h2>
-            <div class="flex gap-5">
+            <div class="xl:flex">
+                <div class="flex gap-5">
                 <div class="ml-3"><img src="./assets/image 32.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 33.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 34.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 35.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 36.png" alt="" class="h-52"></div>
-                <div><img src="./assets/image 37.png" alt="" class="h-52"></div>
+            </div>
+            <div class="flex gap-5 mt-5 xl:mt-0">
+                <div class="ml-3"><img src="./assets/image 37.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 38.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 39.png" alt="" class="h-52"></div>
                 <div><img src="./assets/image 40.png" alt="" class="h-52"></div>
                 <div class="mr-3"><img src="./assets/image 41.png" alt="" class="h-52"></div>
+            </div>
             </div>
             <div class="mt-3">
                 <img src="./assets/image 42.jpg" alt="" width="97%" class="ml-5">
@@ -166,178 +185,223 @@
             </div>
 
 
+            <div class="border-1 p-4">
+                <p class="text-sm font-bold">Superior online shopping in the UAE</p>
+                <br>
+                <p class="text-xs ">As the leading destination for <ins>online shopping in the UAE</ins>, noon has
+                    everything you need under one
+                    roof. Whether you’re shopping for the latest <span class="text-blue-600">electronic products</span>,
+                    fashion, homeware, <span class="text-blue-600">products for
+                        kids and babies</span>,<ins> books</ins> and stationery, sports and health essentials, <span
+                        class="text-blue-600">beauty products</span>, or
+                    groceries,
+                    we have millions of products in the noon <ins>UAE store.</ins> As a <ins>customer-centric</ins>
+                    online store, we make it
+                    easier to <ins>buy online</ins> with flexible payment plans that help you save, along with regular
+                    sales across
+                    our extensive product range, gift cards, wishlists, our <span class="text-blue-600">exclusive
+                        Mashreq VIP</span> card, our easy-to-use
+                    shopping app, and so much more.
+                </p>
+                <br>
+                <p class="text-sm font-bold">Shop the best products & brands at noon UAE</p>
+                <br>
+                <p class="text-xs">You’ll find a massive variety of products from <ins>top brands</ins> at <ins>noon
+                        UAE</ins>. Our
+                    electronics department has the <span class="text-blue-600">latest mobile phones</span>, along with
+                    tablets, mobile accessories,
+                    <span class="text-blue-600">laptops</span>, <ins>wearable technology</ins> such as smartwatches and
+                    other <ins>wearable devices</ins>,
+                    headphones (<ins>in-ear</ins>,
+                    <ins>wireless</ins> and <ins>noise-cancelling</ins>), audiovisual gear, a selection of cameras,
+                    televisions, video game
+                    consoles such as PC and Xbox controllers, and video games. We have products from Samsung, Xiaomi,
+                    Sony, HP, Dell, Huawei, Lenovo, Apple, and many other leading tech brands.
+                </p>
+                <br>
+                <p class="text-sm font-bold">Hassle-free UAE online shopping</p>
+                <br>
+                <p class="text-xs">When you buy online at noon, you will always have peace of mind knowing that you are
+                    getting the best level of service. We take the hassle out of online shopping in Abu Dhabi and Dubai,
+                    with a number of features and flexible payment plans that make shopping simpler, faster, and better.
+                    Our Buy Now, Pay Later plans include Tabby, with orders split over 4 payments, and Tamara, with
+                    orders split over 3 payments. Both plans are interest-free. We accept credit cards and debit cards
+                    from Emirates NBD, FAB bank, Mashreq bank, ADCIB, and ADIB, and cash on delivery. For even more
+                    convenience, we have a No-Cost EMI. We have a 15-day return policy that takes even more stress out
+                    of shopping.</p>
+            </div>
+
+            <div class="border-y-2 border-inherit px-3 py-5 flex ">
+                <div>
+                    <p class="text-lg font-bold">We're Always Here To Help</p>
+
+                    <p class="text-xs mt-2">each out to us through any of these support channels</p>
+                </div>
+
+                <div class="w-2/4"></div>
+
+                <div class="my-3 p-2 rounded-full bg-white mr-2">
+                    <img src="./assets/img 48.png" alt="" width="20px">
+                </div>
+                <div class="mr-7">
+                    <p class="text-sm">HELP CENTER</p>
+                    <p class="text-lg font-semibold">help.noon.com</p>
+
+                </div>
+                <div class="my-3 p-2 rounded-full bg-white mr-2">
+                    <img src="./assets/img 49.png" alt="" width="20px">
+                </div>
+                <div class="">
+                    <p class="text-sm">EMAIL SUPPORT</p>
+                    <p class="text-lg font-semibold">care@noon.com</p>
+
+                </div>
+            </div>
+            <footer class="bg-white">
+                <div class="xl:flex justify-evenly">
+                <div class="flex justify-around xl:gap-10">
+                    <div class="ml-5 mt-5">
+                        <h2><b>ELECTRONICS</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo </p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2><b>FASHIONS</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo </p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2><b>HOME & KITCHENS</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo</p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2><b>BEAUTY</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo</p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                </div>
+                <div class="flex justify-around xl:gap-10">
+                    <div class="mt-5">
+                        <h2><b>HOME APPLIANCES</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo</p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                    <div class="mt-5">
+                        <h2><b>BABY & TOYS</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo </p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                    <div class="mt-5 mr-5">
+                        <h2><b>TOP BRANDS</b></h2>
+                        <p class="text-sm mt-2">Mobiles</p>
+                        <p class="text-sm mt-2">Tablet</p>
+                        <p class="text-sm mt-2">Laptops</p>
+                        <p class="text-sm mt-2">Home Apliances</p>
+                        <p class="text-sm mt-2">Camera, Photo </p>
+                        <p class="text-sm mt-2">Televisions</p>
+                        <p class="text-sm mt-2">Headphones</p>
+                        <p class="text-sm mt-2">Video Games</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="flex justify-around">
+                    <div>
+                        <div class=" mt-32 text-center">
+
+                            <p><b>SHOP ON THE GO</b></p>
+
+                        </div>
+                        <div class="flex">
+                            <img src="./assets/logo app store.svg" alt="" width="120px">
+                            <img src="./assets/logo google play.svg" alt="" width="120px">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class=" mt-32 text-center">
+
+                            <p><b>CONNECT WITH US</b></p>
+
+                        </div>
+                        <div class="flex gap-3 ">
+                            <div><i class="fa-brands fa-facebook-f fa-xl rounded-full p-5 bg-[#ffed14]"
+                                    style="color: #000000;"></i></div>
+                            <div><i class="fa-brands fa-twitter fa-xl rounded-full p-5  bg-[#ffed14]"
+                                    style="color: #000000;"></i></div>
+                            <div><i class="fa-brands fa-instagram fa-xl rounded-full p-5  bg-[#ffed14]"
+                                    style="color: #000000;"></i></div>
+                            <div><i class="fa-brands fa-linkedin-in fa-xl rounded-full p-5  bg-[#ffed14]"
+                                    style="color: #000000;"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-100">
+                    <div class="flex justify-between mt-14">
+                        <div class="mt-5">
+                            <p class="ml-3 text-sm">@ 2023 noon. All Right Reserved</p>
+                        </div><br>
+                        <div class="flex gap-8 mt-5">
+                            <img src="./assets/image 44.svg" alt="">
+                            <img src="./assets/image 45.svg" alt="">
+                            <img src="./assets/image 46.svg" alt="">
+                            <img src="./assets/image 47.svg" alt="">
+                            <img src="./assets/image 48.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex gap-8 h-24">
+                        <p class="ml-3">careers </p>
+                        <p>waranty policy</p>
+                        <p>sell with us</p>
+                        <p>terms of use</p>
+                        <p>terms of sale</p>
+                        <p>privacy policy</p>
+                        <p>customer rights</p>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <footer class="bg-white">
-        <div class="flex justify-evenly">
-            <div class="ml-5 mt-5">
-                <h2><b>ELECTRONICS</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo</p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5">
-                <h2><b>FASHIONS</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo </p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5">
-                <h2><b>HOME & KITCHENS</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo</p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5">
-                <h2><b>BEAUTY</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo</p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5">
-                <h2><b>HOME APPLIANCES</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo</p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5">
-                <h2><b>BABY & TOYS</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo </p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-            <div class="mt-5 mr-5">
-                <h2><b>TOP BRANDS</b></h2>
-                <p>Mobiles</p>
-                <p>Tablet</p>
-                <p>Laptops</p>
-                <p>Home Apliances</p>
-                <p>Camera, Photo </p>
-                <p>Televisions</p>
-                <p>Headphones</p>
-                <p>Video Games</p>
-            </div>
-        </div>
-        
-    
-        <div class="justify-evenly flex mt-32">
-            <div>
-                <p><b>SHOP ON THE GO</b></p>
-            </div>
-            <div>
-                <p><b>CONNECT WITH US</b></p><br>
-            </div>
-        </div>
-        <div class="flex justify-evenly">
-            <div class="flex">
-                <img src="./assets/logo app store.svg" alt="" width="120px">
-                <img src="./assets/logo google play.svg" alt="" width="120px">
-            </div>
-            <div class="flex gap-5">
-                <i class="fa-brands fa-facebook fa-2xl" style="color: #fbff05;"></i>
-                <i class="fa-brands fa-twitter fa-2xl" style="color: #fff705;"></i>
-                <i class="fa-brands fa-instagram fa-2xl" style="color: #eeff00;"></i>
-                <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffdd00;"></i>
-            </div>
-        </div>
-        <div class="bg-slate-100">
-        <div class="flex justify-between mt-14">
-            <div>
-                <p class="ml-3">@ all right reserved</p>
-            </div><br>
-            <div class="flex gap-8">
-                <img src="./assets/image 44.svg" alt="">
-                <img src="./assets/image 45.svg" alt="">
-                <img src="./assets/image 46.svg" alt="">
-                <img src="./assets/image 47.svg" alt="">
-                <img src="./assets/image 48.svg" alt="">
-            </div>
-        </div>
-        <div class="flex gap-8 h-36">
-            <p class="ml-3">careers </p>
-            <p>waranty policy</p>
-            <p>sell with us</p>
-            <p>terms of use</p>
-            <p>terms of sale</p>
-            <p>privacy policy</p>
-            <p>customer rights</p>
-        </div>
-        </div>
-        </footer>
+        <script src="https://kit.fontawesome.com/9aded8b196.js" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://kit.fontawesome.com/9aded8b196.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+ 
